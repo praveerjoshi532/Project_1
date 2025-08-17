@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #2d3e50;
+            color: #fff;
+            padding: 20px 40px;
+            text-align: center;
+        }
+        nav {
+            background: #1a232f;
+            padding: 10px 40px;
+        }
+        nav a {
+            color: #fff;
+            margin-right: 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        .cards {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .card {
+            flex: 1 1 200px;
+            background: #f9fafb;
+            padding: 20px;
+            border-radius: 6px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+            text-align: center;
+        }
+        .card h2 {
+            margin: 0 0 10px 0;
+            font-size: 2em;
+            color: #2d3e50;
+        }
+        .card p {
+            margin: 0;
+            color: #555;
+        }
+        @media (max-width: 800px) {
+            .cards {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dashboard</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Reports</a>
+        <a href="#">Settings</a>
+        <a href="#">Logout</a>
+    </nav>
+    <div class="container">
+        <div class="cards">
+            <div class="card">
+                <h2>120</h2>
+                <p>Users</p>
+            </div>
+            <div class="card">
+                <h2>75</h2>
+                <p>Projects</p>
+            </div>
+            <div class="card">
+                <h2>34</h2>
+                <p>Tasks</p>
+            </div>
+            <div class="card">
+                <h2>8</h2>
+                <p>Notifications</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
